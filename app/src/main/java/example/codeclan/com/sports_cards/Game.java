@@ -33,15 +33,9 @@ public class Game {
 
         draftPool.setUpDraft();
 
-//        deal();
-//        draftPool.dealCard(user);
-//        draftPool.dealCard(computer);
-//        draftPool.dealCard(user);
-//        draftPool.dealCard(computer);
-//        deal();
     }
 
-    public void deal(){
+    public void deal(){ //turn to string and put in the players picked
         Card card;
         for (User user: users) {
             history.add(user.getUserName());
@@ -50,40 +44,32 @@ public class Game {
             history.add(card.toString());
             System.out.println(user1.getUserName() + " Received " + card.getPlayerDisplay() + "");
 
-
             card = draftPool.dealCard(computer);
             history.add(card.toString());
             System.out.println(computer.getUserName() + " Received " + card.getPlayerDisplay() + "");
 
 
-//            card = draftPool.dealCard(user1);
-//            history.add(card.toString());
-//            System.out.println(user.getUserName() + " Received " + card.getPlayerDisplay() + "");
-//
-//
-//            card = draftPool.dealCard(computer);
-//            history.add(card.toString());
-//            System.out.println(computer.getUserName() + "Received" + card.getPlayerDisplay() + "");
-
-
-
         }
     }
 
-    private void findWinner () {
+    private String findWinner () {
         if (user1.getTotalValue() - computer.getTotalValue() >= 0){
             System.out.println("You win!");
+            return("You win!");
         }
         else {
             System.out.println("Computer wins!");
-        };
+            return("You lose!");
+        }
 
     }
 
-    public void play(){
+    public String play(){
         deal();
         findWinner();
         history.showResults();
+        String result = findWinner();
+        return result;
     }
 
 }

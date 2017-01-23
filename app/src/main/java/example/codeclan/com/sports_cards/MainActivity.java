@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         Team computerTeam = new Team();
         Game game = new Game("You", "Computer", userTeam, computerTeam);
         game.setUpGame();
-        game.play();
+        String result = game.play();
+        show.setText(result);
 
     }
 }

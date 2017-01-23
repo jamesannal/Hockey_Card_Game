@@ -8,6 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_blue_light"
+    android:fontFamily="monospace"
     tools:context="example.codeclan.com.sports_cards.MainActivity">
 
     <TextView
@@ -16,24 +18,45 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2sp"
         android:text="@string/title"
-        android:textSize="30sp"/>
+        android:textSize="35sp"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"/>
 
     <TextView
         android:id="@+id/game_explain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="70sp"
         android:text="@string/game_explain"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+
+        />
+
 
     <Button
         android:id="@+id/draft_card"
         android:text="@string/draft_your_player"
         android:onClick="onDraftButtonPressed"
         android:layout_width="250sp"
-        android:layout_height="100sp"
+        android:layout_height="90sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300sp"
-        android:textSize="30sp"
-        />
+        android:layout_marginTop="280sp"
+        android:textSize="50sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:fontFamily="monospace"
+    />
+    <TextView
+        android:id="@id/result_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400sp"
+        android:text="@string/show"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:fontFamily="monospace"/>
+
 </RelativeLayout>
