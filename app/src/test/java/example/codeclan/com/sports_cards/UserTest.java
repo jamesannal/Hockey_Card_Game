@@ -34,4 +34,5 @@ public class UserTest {
         assertEquals(1, user.getRosterNumber());
     }
 
+
 }

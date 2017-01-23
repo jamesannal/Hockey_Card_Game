@@ -11,7 +11,28 @@
     tools:context="example.codeclan.com.sports_cards.MainActivity">
 
     <TextView
+        android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="2sp"
+        android:text="@string/title"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/game_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="@string/game_explain"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/draft_card"
+        android:text="@string/draft_your_player"
+        android:onClick="onDraftButtonPressed"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500sp"
+        />
 </RelativeLayout>

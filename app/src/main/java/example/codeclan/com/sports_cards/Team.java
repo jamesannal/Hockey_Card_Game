@@ -20,13 +20,13 @@ public class Team {
     public int getRosterNumber() {
         return cards.size();
     }
+
+    public int getRosterScore() {
+        int total = 0;
+        for (Card card : cards) {
+            total += card.getValue();
+        }
+        return total;
+    }
+
 }
-
-//    public int getRoster() { // use something like this when need to build total number for situations
-//        int total = 0;
-//        for (Card card : cards) {
-//            total += card.getValue();
-//        }
-//        return total;
-//    }
-

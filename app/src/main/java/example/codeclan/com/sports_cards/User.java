@@ -25,4 +25,8 @@ public class User {
     public int getRosterNumber() {
         return team.getRosterNumber();
     }
+
+    public int getTotalValue() {
+        return team.getRosterScore();
+    }
 }

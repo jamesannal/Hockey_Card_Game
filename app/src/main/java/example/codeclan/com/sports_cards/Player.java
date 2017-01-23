@@ -53,7 +53,7 @@ public enum Player {
     DOAN(30),
     DAVISON(20),
     LUCIC(10),
-    GLASS(1);
+    GLASS(1), ;
 
     public int value;
 

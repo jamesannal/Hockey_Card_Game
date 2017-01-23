@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="explanation_text" type="id">HERE BE EXPLANATION</item>
+    <item name="game_explain" type="id" />
+    <item name="draft_card" type="id">draft_card</item>
+</resources>

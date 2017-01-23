@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Sports_Cards</string>
+    <string name="app_name">Sports Cards - Ice Hockey</string>
+    <string name="title">Welcome to Hockey Card Game.</string>
+    <string name="game_explain">You will be assigned two players by pressing the button below. The computer will throw pairs of players at you. If your players are superior, you will score a point.</string>
+    <string name="draft_your_player">CLICK HERE TO BEGIN</string>
 </resources>
