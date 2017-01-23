@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     TextView title;
     TextView explain;
     Button draftCard;
+    TextView show;
     Button computerCard;
     Button offTheGlass;
     Button playAgain;
@@ -28,8 +29,11 @@ public class MainActivity extends AppCompatActivity {
         Bundle extras = intent.getExtras();
 
         explain = (TextView)findViewById(R.id.game_explain);
-
         draftCard = (Button)findViewById(R.id.draft_card);
+        show = (TextView)findViewById(R.id.result_box);
+
+
+        Log.d(getClass().toString(), "onCreate called");
 
     }
 

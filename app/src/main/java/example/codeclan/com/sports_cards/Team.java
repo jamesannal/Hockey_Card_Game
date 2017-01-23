@@ -14,6 +14,7 @@ public class Team {
 
     public void draftCard(Card card) {
         cards.add(card);
+//        cards.remove(0);
     }
 
 

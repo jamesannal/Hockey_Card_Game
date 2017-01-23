@@ -21,7 +21,6 @@ public class UserTest {
         card = new Card(HORVAT, HORVAT.value);
         user.draftCardToTeam(card);
 
-
     }
 
     @Test
@@ -34,5 +33,8 @@ public class UserTest {
         assertEquals(1, user.getRosterNumber());
     }
 
-
+    @Test
+    public void canGetRosterScore() {
+        assertEquals(82, user.getTotalValue());
+    }
 }

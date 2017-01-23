@@ -42,7 +42,7 @@ public class TeamTest {
     @Test
     public void canCheckRosterScore() {
         team.draftCard(card2);
-        assertEquals(83, team.getRosterScore());
+        assertEquals(82, team.getRosterScore());
     }
 
 }

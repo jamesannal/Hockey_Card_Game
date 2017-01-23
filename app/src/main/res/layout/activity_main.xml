@@ -30,9 +30,10 @@
         android:id="@+id/draft_card"
         android:text="@string/draft_your_player"
         android:onClick="onDraftButtonPressed"
-        android:layout_width="200sp"
-        android:layout_height="50sp"
+        android:layout_width="250sp"
+        android:layout_height="100sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="500sp"
+        android:layout_marginTop="300sp"
+        android:textSize="30sp"
         />
 </RelativeLayout>

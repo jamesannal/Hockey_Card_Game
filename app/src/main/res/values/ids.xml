@@ -3,4 +3,6 @@
     <item name="explanation_text" type="id">HERE BE EXPLANATION</item>
     <item name="game_explain" type="id" />
     <item name="draft_card" type="id">draft_card</item>
+    <item name="result_answer" type="id">BLAH</item>
+    <item name="result_box" type="id">RESULT</item>
 </resources>
