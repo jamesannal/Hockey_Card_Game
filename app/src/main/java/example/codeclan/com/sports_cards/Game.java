@@ -1,6 +1,8 @@
 package example.codeclan.com.sports_cards;
 
 
+import android.content.Context;
+import android.os.Vibrator;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -24,6 +26,8 @@ public class Game {
         this.draftPool = new DraftPool(new ArrayList<Card>());
         this.users = new ArrayList<User>();
         this.history = new History();
+
+
     }
 
 
