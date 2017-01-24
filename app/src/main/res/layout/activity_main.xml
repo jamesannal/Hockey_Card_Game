@@ -52,7 +52,7 @@
         android:id="@id/result_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400sp"
+        android:layout_marginTop="380sp"
         android:text="@string/show"
         android:layout_centerHorizontal="true"
         android:textSize="60sp"
@@ -62,10 +62,10 @@
         android:id="@id/player_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400sp"
-        android:text="@string/show"
+        android:layout_marginTop="480sp"
+        android:text="@string/playerShow"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:fontFamily="monospace"/>
 
 </RelativeLayout>

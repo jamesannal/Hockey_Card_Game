@@ -43,10 +43,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d(getClass().toString(), draftCard.getText().toString());
         Team userTeam = new Team();
         Team computerTeam = new Team();
-        Game game = new Game("You", "Computer", userTeam, computerTeam);
+        Game game = new Game("You", "I", userTeam, computerTeam);
         game.setUpGame();
         String result = game.play();
+        Log.d("game.play result", result);
         String result2 = game.deal();
+        Log.d("game.deal result", result);
         show.setText(result);
         playerShow.setText(result2);
 

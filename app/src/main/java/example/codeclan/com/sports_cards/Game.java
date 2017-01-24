@@ -31,7 +31,7 @@ public class Game {
         users.add(user1);
         users.add(computer);
 
-        draftPool.setUpDraft();
+//        draftPool.setUpDraft();
 
     }
 
@@ -42,13 +42,13 @@ public class Game {
 
             card = draftPool.dealCard(user1);
             history.add(card.toString());
-            System.out.println(user1.getUserName() + " Received " + card.getPlayerDisplay() + "");
+            System.out.println(user1.getUserName() + " received " + card.getPlayerDisplay() + "");
 
             card = draftPool.dealCard(computer);
             history.add(card.toString());
-            System.out.println(computer.getUserName() + " Received " + card.getPlayerDisplay() + "");
+            System.out.println(computer.getUserName() + " received " + card.getPlayerDisplay() + "");
         }
-        return ("" + user1.getUserName() + " Received " + user1.getTeam().getCards().toString() + " While " + computer.getUserName() + " Received " + computer.getTeam().getCards()  + "");
+        return ("" + user1.getUserName() + " received: " + "\r\n" + user1.getTeam().getCardStringified() + "\r\n " + "\r\n" + "" + computer.getUserName() + " received: " + "\r\n" + computer.getTeam().getCardStringified() + "");
     }
 
     private String findWinner () {
@@ -64,11 +64,16 @@ public class Game {
     }
 
     public String play(){
-        deal();
         findWinner();
         history.showResults();
         String result = findWinner();
+        Log.d(getClass().toString(), result.toString());
         return result;
     }
+
+
+
+
+
 
 }
