@@ -50,7 +50,7 @@ public class Game {
         }
         return ("" + user1.getUserName() + " received: " + "\r\n" + user1.getTeam().getCardStringified() + "\r\n " + "\r\n" + "" + computer.getUserName() + " received: " + "\r\n" + computer.getTeam().getCardStringified() + "").replaceAll("\\[|\\]", "");
     }
-    
+
 
     private String findWinner () {
         if (user1.getTotalValue() - computer.getTotalValue() >= 0){

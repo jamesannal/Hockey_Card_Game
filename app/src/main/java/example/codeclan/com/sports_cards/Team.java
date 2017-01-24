@@ -39,6 +39,7 @@ public class Team {
         ArrayList<String> stringifiedCards = new ArrayList<>();
         for(Card card : cards){
             String answer = card.getPlayerName().toString().toLowerCase();
+            answer = answer.substring(0,1).toUpperCase() + answer.substring(1).toLowerCase();
             stringifiedCards.add(answer);
 
         }
