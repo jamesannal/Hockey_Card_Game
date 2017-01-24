@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     TextView explain;
     Button draftCard;
     TextView show;
+    TextView playerShow;
     Button computerCard;
     Button offTheGlass;
     Button playAgain;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         explain = (TextView)findViewById(R.id.game_explain);
         draftCard = (Button)findViewById(R.id.draft_card);
         show = (TextView)findViewById(R.id.result_box);
+        playerShow = (TextView)findViewById(R.id.player_box);
 
 
         Log.d(getClass().toString(), "onCreate called");
@@ -44,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
         Game game = new Game("You", "Computer", userTeam, computerTeam);
         game.setUpGame();
         String result = game.play();
+        String result2 = game.deal();
         show.setText(result);
+        playerShow.setText(result2);
+
 
     }
 }

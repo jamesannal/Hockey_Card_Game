@@ -42,4 +42,5 @@ public class DraftPool {
         cards.remove(0);
         return card;
     }
+
 }

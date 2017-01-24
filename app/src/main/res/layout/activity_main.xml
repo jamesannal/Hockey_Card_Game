@@ -32,7 +32,6 @@
         android:layout_marginTop="70sp"
         android:text="@string/game_explain"
         android:textSize="30sp"
-
         />
 
 
@@ -57,6 +56,16 @@
         android:text="@string/show"
         android:layout_centerHorizontal="true"
         android:textSize="60sp"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@id/player_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400sp"
+        android:text="@string/show"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
         android:fontFamily="monospace"/>
 
 </RelativeLayout>

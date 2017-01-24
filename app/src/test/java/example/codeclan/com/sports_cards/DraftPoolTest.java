@@ -33,10 +33,5 @@ public class DraftPoolTest {
         assertEquals(1, user.getRosterNumber());
     }
 
-    @Test
-    public void cancheckCardDealt() {
-
-    }
-
 
 }

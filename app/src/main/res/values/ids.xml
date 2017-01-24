@@ -5,4 +5,5 @@
     <item name="draft_card" type="id">draft_card</item>
     <item name="result_answer" type="id">BLAH</item>
     <item name="result_box" type="id">RESULT</item>
+    <item name="player_box" type="id">RESULT FROM PLAYER</item>
 </resources>

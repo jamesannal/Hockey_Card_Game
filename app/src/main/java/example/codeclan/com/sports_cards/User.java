@@ -29,4 +29,12 @@ public class User {
     public int getTotalValue() {
         return team.getRosterScore();
     }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public void showPlayers() {
+        for (Card card : getTeam().getCards());
+    }
 }

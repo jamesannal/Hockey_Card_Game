@@ -29,4 +29,12 @@ public class Team {
         return total;
     }
 
+    public ArrayList<Card> getCards() {
+        return cards;
+    }
+
+//    public String showCardNames() {
+//        this.getCards().getPlayerName();
+//    }
+
 }

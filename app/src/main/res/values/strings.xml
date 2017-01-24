@@ -4,4 +4,5 @@
     <string name="game_explain">You will be assigned two players by pressing the button below. Your opponent will simultaneously draw two players to play against you. If you have superior players; you win. There are no upsets here.</string>
     <string name="draft_your_player">PLAY</string>
     <string name="show">Result</string>
+    <string name="playerShow">""</string>
 </resources>
