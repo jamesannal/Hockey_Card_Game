@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Incredibly Boring Hockey</string>
     <string name="title"> The Incredibly Boring Hockey Game</string>
-    <string name="game_explain">You will be assigned two players by pressing the button below. Your opponent will simultaneously draw two players to play against you. If you have superior players; you win. There are no upsets here.</string>
+    <string name="game_explain">Press the draft button to draft two players. Your opponent will simultaneously draft two players to play against you. If you think you have superior players press play to see if you win. Press draft again if you aren\'t feeling confident about the result.</string>
     <string name="draft_your_player">DRAFT</string>
     <string name="show">""</string>
     <string name="playerShow">""</string>
