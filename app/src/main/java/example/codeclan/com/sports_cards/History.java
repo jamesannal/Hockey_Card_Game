@@ -20,8 +20,9 @@ public class History {
     public void showResults() {
         for (String result : results) {
             System.out.println(result);
-        }
 
+        }
+        this.results.clear();
     }
 }
 

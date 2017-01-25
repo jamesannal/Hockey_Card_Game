@@ -1,8 +1,6 @@
 package example.codeclan.com.sports_cards;
 
 
-import android.content.Context;
-import android.os.Vibrator;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -17,7 +15,7 @@ public class Game {
     private ArrayList<User> users;
     public User user1;
     public User computer;
-    private History history;
+//    private History history;
 
 
     public Game(String playerName, String computer, Team userTeam, Team computerTeam){
@@ -25,9 +23,7 @@ public class Game {
         this.computer = new User(computer, computerTeam);
         this.draftPool = new DraftPool(new ArrayList<Card>());
         this.users = new ArrayList<User>();
-        this.history = new History();
-
-
+//        this.history = new History();
     }
 
 
@@ -42,15 +38,25 @@ public class Game {
     public String deal(){ //turn to string and put in the players picked
         Card card;
         for (User user: users) {
-            history.add(user.getUserName());
+            user.getTeam().getCards().clear();
 
-            card = draftPool.dealCard(user1);
-            history.add(card.toString());
-            System.out.println(user1.getUserName() + " received " + card.getPlayerDisplay() + "");
+//            history.add(user.getUserName());
 
-            card = draftPool.dealCard(computer);
-            history.add(card.toString());
-            System.out.println(computer.getUserName() + " received " + card.getPlayerDisplay() + "");
+            card = draftPool.dealCard(user);
+//            history.add(card.toString());
+            System.out.println(user.getUserName() + " received " + card.getPlayerDisplay() + "");
+
+//            card = draftPool.dealCard(computer);
+//            history.add(card.toString());
+//            System.out.println(computer.getUserName() + " received " + card.getPlayerDisplay() + "");
+
+//            card = draftPool.dealCard(user1);
+//            history.add(card.toString());
+//            System.out.println(user1.getUserName() + " received " + card.getPlayerDisplay() + "");
+//
+//            card = draftPool.dealCard(computer);
+//            history.add(card.toString());
+//            System.out.println(computer.getUserName() + " received " + card.getPlayerDisplay() + "");
         }
         return ("" + user1.getUserName() + " received: " + "\r\n" + user1.getTeam().getCardStringified() + "\r\n " + "\r\n" + "" + computer.getUserName() + " received: " + "\r\n" + computer.getTeam().getCardStringified() + "").replaceAll("\\[|\\]", "");
     }
@@ -70,7 +76,7 @@ public class Game {
 
     public String play(){
         findWinner();
-        history.showResults();
+//        history.showResults();
         String result = findWinner();
         Log.d(getClass().toString(), result.toString());
         return result;

@@ -40,6 +40,7 @@ public class DraftPool {
         Card card = cards.get(0);
         user.draftCardToTeam(card);
         cards.remove(0);
+        setUpDraft();
         return card;
     }
 

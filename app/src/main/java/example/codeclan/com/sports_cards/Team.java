@@ -48,14 +48,4 @@ public class Team {
 
 
 
-
-
-//    public String toSentenceCase(String words) {
-//        return words.substring(0,1).toUpperCase() + words.substring(1);
-//    }
-
-//    public String showCardNames() {
-//        this.getCards().getPlayerName();
-//    }
-
 }

@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
     TextView playerShow;
     Button offTheGlass;
     Button takeThemOn;
+    Team userTeam = new Team();
+    Team computerTeam = new Team();
+    Game game = new Game("You", "Opponent", userTeam, computerTeam);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
         title = (TextView)findViewById(R.id.title_text);
         Intent intent;
-//        Bundle extras = intentent.getExtras();
-        Game game;
+//        Bundle extras = intent.getExtras();
+//        Game game = new Game("You", "Opponent", userTeam, computerTeam);
+
 
         explain = (TextView)findViewById(R.id.game_explain);
         draftCard = (Button)findViewById(R.id.draft_card);
@@ -41,24 +46,35 @@ public class MainActivity extends AppCompatActivity {
 
     public void onDraftButtonPressed(View button) {
         Log.d(getClass().toString(), draftCard.getText().toString());
-        Team userTeam = new Team();
-        Team computerTeam = new Team();
-        Game game = new Game("You", "Opponent", userTeam, computerTeam);
+//        Team userTeam = new Team();
+//        Team computerTeam = new Team();
+        userTeam.getCards().clear();
+        computerTeam.getCards().clear();
         game.setUpGame();
         String result2 = game.deal();
-        String result = game.play();
-        Log.d("game.play result", result);
+//        String result = game.play();
+//        Log.d("game.play result", result);
 
         Log.d("game.deal result", result2);
-        show.setText(result);
+//        show.setText(result);
         playerShow.setText(result2);
     }
 
-//    public void onPlayButtonPressed(View button) {
-//
-//        String result = game.play();
-//        Log.d("game.play result", result);
-//        show.setText(result);
-//
+    public void onTakeThemOnButtonPressed(View button) {
+
+        String result = game.play();
+        Log.d("game.play result", result);
+        show.setText(result);
+
+    }
+
+//    public void onOffTheGlassButtonPressed(View button) {
+//        Team userTeam = new Team();
+//        Team computerTeam = new Team();
+//        Game game = new Game("You", "Opponent", userTeam, computerTeam);
+//        game.setUpGame();
+//        String result2 = game.deal();
+//        Log.d("game.deal result", result2);
+//        playerShow.setText(result2);
 //    }
 }
