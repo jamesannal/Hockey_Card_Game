@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("game.deal result", result2);
 //        show.setText(result);
         playerShow.setText(result2);
+        show.setText("");
     }
 
     public void onTakeThemOnButtonPressed(View button) {

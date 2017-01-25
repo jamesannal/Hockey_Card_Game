@@ -54,7 +54,7 @@
         android:text="@string/play_them"
         android:onClick="onTakeThemOnButtonPressed"
         android:layout_width="250sp"
-        android:layout_height="180sp"
+        android:layout_height="100sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="650sp"
         android:textSize="50sp"
