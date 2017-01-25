@@ -15,7 +15,7 @@ public class Game {
     private ArrayList<User> users;
     public User user1;
     public User computer;
-//    private History history;
+    private History history;
 
 
     public Game(String playerName, String computer, Team userTeam, Team computerTeam){
@@ -23,11 +23,12 @@ public class Game {
         this.computer = new User(computer, computerTeam);
         this.draftPool = new DraftPool(new ArrayList<Card>());
         this.users = new ArrayList<User>();
-//        this.history = new History();
+        this.history = new History();
     }
 
 
     public void setUpGame() {
+        users.clear();
         users.add(user1);
         users.add(computer);
 
@@ -40,10 +41,10 @@ public class Game {
         for (User user: users) {
             user.getTeam().getCards().clear();
 
-//            history.add(user.getUserName());
+            history.add(user.getUserName());
 
             card = draftPool.dealCard(user);
-//            history.add(card.toString());
+            history.add(card.toString());
             System.out.println(user.getUserName() + " received " + card.getPlayerDisplay() + "");
 
 //            card = draftPool.dealCard(computer);
