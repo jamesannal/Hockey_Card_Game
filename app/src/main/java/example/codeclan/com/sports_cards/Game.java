@@ -47,6 +47,10 @@ public class Game {
             history.add(card.toString());
             System.out.println(user.getUserName() + " received " + card.getPlayerDisplay() + "");
 
+            card = draftPool.dealCard(user);
+            history.add(card.toString());
+            System.out.println(user.getUserName() + " received " + card.getPlayerDisplay() + "");
+
 //            card = draftPool.dealCard(computer);
 //            history.add(card.toString());
 //            System.out.println(computer.getUserName() + " received " + card.getPlayerDisplay() + "");
